@@ -1,0 +1,43 @@
+<template>
+    <div class="delivery-information">
+        <div class="delivery-information-item">
+            <img src="../static/free-delivery-logo.png" alt="free-delivery-logo">
+            <p>Безкоштовна доставка від 1800 грн</p>
+        </div>
+        <div class="delivery-information-item">
+            <img src="../static/delivery-time-logo.png" alt="delivery-time-logo">
+            <p>Відправки в день оформлення замовлення до 16:00</p>
+        </div>
+        <div class="delivery-information-item">
+            <img src="../static/delivery-return-logo.png" alt="delivery-return-logo">
+            <p>Гарантія повернення грошових коштів</p>
+        </div>
+    </div>
+</template>
+
+<style>
+.delivery-information {
+    margin-top: 100px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px 56px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.54) 100%);
+    border-radius: 15px;
+}
+
+.delivery-information-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 280px;
+
+}
+
+.delivery-information img {
+    max-width: 56px;
+    margin-right: 26px;
+}
+</style>
