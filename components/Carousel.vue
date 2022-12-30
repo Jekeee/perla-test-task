@@ -62,7 +62,7 @@
 .carousel-control-prev,
 .carousel-control-next {
     max-width: 22px !important;
-    opacity: 50% !important;
+    opacity: 0.5 !important;
 
 }
 
@@ -109,7 +109,7 @@
     .carousel-control-prev,
     .carousel-control-next {
         max-width: 22px !important;
-        opacity: 50% !important;
+        opacity: 0.5 !important;
         margin-left: -170px;
         margin-right: -170px;
 
@@ -154,7 +154,7 @@
     .carousel-control-prev,
     .carousel-control-next {
         max-width: 17px !important;
-        opacity: 50% !important;
+        opacity: 0.5 !important;
         margin-left: -45px;
         margin-right: -45px;
         height: 30px;

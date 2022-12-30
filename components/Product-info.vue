@@ -348,7 +348,7 @@ input::-webkit-inner-spin-button {
 
 .nav-link {
     color: #00284F;
-    opacity: 40%;
+    opacity: 0.4;
     cursor: pointer;
     border: none !important;
 
@@ -362,7 +362,7 @@ input::-webkit-inner-spin-button {
 .nav-link.active {
     border-bottom: 2px solid #00284F !important;
     background: none !important;
-    opacity: 100%;
+    opacity: 1;
 }
 
 #nav-tab {
@@ -615,7 +615,7 @@ input::-webkit-inner-spin-button {
 
     .nav-link {
         color: #00284F;
-        opacity: 40%;
+        opacity: 0.4;
         cursor: pointer;
         border: none !important;
 
@@ -629,7 +629,7 @@ input::-webkit-inner-spin-button {
     .nav-link.active {
         border-bottom: 2px solid #00284F !important;
         background: none !important;
-        opacity: 100%;
+        opacity: 1;
     }
 
     #nav-tab {
@@ -907,7 +907,7 @@ input::-webkit-inner-spin-button {
 
     .nav-link {
         color: #00284F;
-        opacity: 40%;
+        opacity: 0.4;
         cursor: pointer;
         border: none !important;
         padding: 4px 8px;
@@ -922,7 +922,7 @@ input::-webkit-inner-spin-button {
     .nav-link.active {
         border-bottom: 2px solid #00284F !important;
         background: none !important;
-        opacity: 100%;
+        opacity: 1;
     }
 
 
