@@ -40,4 +40,39 @@
     max-width: 56px;
     margin-right: 26px;
 }
+
+@media (max-width: 1920px) {
+        .delivery-information {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 55px !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-center;
+        padding: 20px 56px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.54) 100%);
+        border-radius: 15px;
+    }
+
+    .delivery-information-item {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+        width: 156px;
+        height: 208px;
+        padding:  20px 60px;
+
+    }
+
+    .delivery-information img {
+        margin-bottom: 27px;
+        max-width: 56px;
+        margin-right: 26px;
+    }
+ }
+
 </style>

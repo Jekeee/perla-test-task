@@ -1,7 +1,7 @@
 <template>
     <div class="galery-product-slider">
-        <div id="carouselExampleControls" class="carousel slide carousel-slider">
-            <div class="carousel-inner">
+        <div id="carouselExampleControls" class="carousel slide">
+             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../static/product-img-1.png" class="d-block w-100" alt="product-img-1">
                 </div>
@@ -18,54 +18,90 @@
                     <img src="../static/product-img-5.png" class="d-block w-100" alt="product-img-5">
                 </div>
             </div>
-        </div>
-        <div class="carousel-btn">
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" id="prev">
+            <div class="carousel-control">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <img src="../static/arrow-left-icon.png" alt="arrow-left-icon">
             </button>
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" id="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <img src="../static/arrow-right-icon.png" alt="arrow-right-icon">
             </button>
-        </div>
+            </div>
+</div>
     </div>
 </template>
 
 <style>
-.galery-product-slider {
+
+.galery-product-slider{
+    width: 550px !important;
+}
+
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    height: 450px !important;
+    max-width: 550px !important;
+    overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    max-width: 22px !important;
+    opacity: 50% !important;
+
+}
+
+
+
+.carousel-control-prev{
+    right: 0 !important;
+}
+
+.carousel-control-prev{
+    left: 450px;
+}
+@media (min-width: 1921px) {
+    .carousel-control{
+    position: relative !important;
+}
+}
+
+
+@media (max-width: 1920px) { 
+    .galery-product-slider{
+    width: 768px !important;
+    height: 310px;
     display: flex;
-    flex-direction: column;
-    max-width: 550px;
-    height: 475px;
-    justify-content: space-between;
-}
-
-
-.slider-buttons {
-    display: flex;
-    flex-direction: row;
-}
-
-.slider-item img {
-    max-width: 100%;
-}
-
-.carousel-slider {
-    display: flex;
-    flex-direction: column;
-}
-
-.carousel-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
 
 }
 
-.carousel-btn button {
-    margin-left: 42px;
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 400px !important;
+    overflow: hidden;
 }
 
-.carousel-btn img {
-    max-width: 22px;
+.carousel-control-prev,
+.carousel-control-next {
+    max-width: 22px !important;
+    opacity: 50% !important;
+    margin-left: -170px;
+    margin-right: -170px;
+
 }
+
+
+
+.carousel-control-prev{
+    right: 123px !important;
+}
+
+.carousel-control-prev{
+    left: 0;
+}
+}
+
 </style>

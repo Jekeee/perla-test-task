@@ -1,12 +1,7 @@
 <template>
     <div>
-        <div class="free-delivery">
-            <p>
-                <img src="../static/free-delivery-icon.png" alt="free-delivery-icon">
-                Безкоштовна досавка від 1800 грн
-                <img src="../static/free-delivery-icon.png" alt="free-delivery-icon">
-            </p>
-        </div>
+        <Free-delivery-block />
+    <div class="header container">
         <div class="header-content container">
             <div class="header-content-left">
                 <button><img src="../static/burger-desk-icon.png" alt="burger-desk-icon"></button>
@@ -33,6 +28,8 @@
             </ul>
         </div>
     </div>
+    </div>
+    
 </template>
 
 <script setup>
@@ -41,32 +38,7 @@ defineProps(['basketList'])
 
 
 <style>
-.free-delivery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #99AFFF;
-    padding: 10px 0;
-    color: #fff;
-}
 
-.free-delivery p {
-    display: flex;
-    align-items: center;
-    font-family: 'Onest';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0;
-}
-
-.free-delivery img {
-    max-width: 20px;
-    margin-left: 13px;
-    margin-right: 13px;
-
-}
 
 .header-content {
     display: flex;
@@ -101,7 +73,7 @@ defineProps(['basketList'])
 }
 
 .header-content img {
-    max-width: 20px;
+    max-width: 24px;
 }
 
 .header-content-logo img {
@@ -159,5 +131,105 @@ defineProps(['basketList'])
     padding: 0;
     border-radius: 50%;
 
+}
+
+@media (max-width: 1920px) {
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px !important;
+    }
+
+    .header-content-left {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .header-content-right {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .header-content button {
+        margin-right: 33px;
+    }
+
+    .header-content a {
+        cursor: pointer;
+        margin-right: 33px;
+    }
+
+    .header-content a:last-child {
+        margin-right: 0;
+    }
+
+    .header-content img {
+        max-width: 23px;
+    }
+
+    .header-content-logo img {
+        max-width: 150px;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        margin-left: 0;
+        font-family: 'Onest', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 29px;
+        margin-top: 45px !important;
+        color: #000;
+    }
+
+    .header-menu ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        width: 768px !important ;
+    }
+
+    .header-menu li {
+        margin-right: 55px;
+    }
+
+    .header-menu li:last-child {
+        margin-right: 0px;
+    }
+
+    .header-menu ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .basket {
+        position: relative;
+    }
+
+    .cart-contity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: #F5F352;
+        color: #1D1D1B;
+        width: 26px;
+        height: 26px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        top: -15px;
+        right: -17px;
+        padding: 0;
+        border-radius: 50%;
+
+    }
 }
 </style>

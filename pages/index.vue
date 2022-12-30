@@ -56,7 +56,20 @@ button {
 
 .main {
   background: url(../static/background.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   font-family: 'Onest', Arial, Helvetica, sans-serif;
   color: #1D1D1B;
 }
+
+
+@media (max-width: 1920px){
+  .container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+}
+
+
 </style>
