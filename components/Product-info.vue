@@ -37,31 +37,18 @@
                         <div class="tab-pane fade" id="nav-ingredients" role="tabpanel"
                             aria-labelledby="nav-ingredients-tab" tabindex="0">
                             <table>
-                                <tbody>
+                                <tbody v-for="ingridient of product.ingridients" v-bind:key=ingridient>
                                     <tr>
-                                        <th>{{ product.ingridients.ingridientsTitle1 }}</th>
-                                        <td>{{ product.ingridients.ingridientsDescription1 }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>{{ product.ingridients.ingridientsTitle2 }}</th>
-                                        <td>{{ product.ingridients.ingridientsDescription2 }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>{{ product.ingridients.ingridientsTitle3 }}</th>
-                                        <td>{{ product.ingridients.ingridientsDescription3 }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>{{ product.ingridients.ingridientsTitle4 }}</th>
-                                        <td>{{ product.ingridients.ingridientsDescription4 }}</td>
+                                        <th>{{ ingridient.title }}</th>
+                                        <td>{{ ingridient.discription }}</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="tab-pane fade" id="nav-application" role="tabpanel"
-                            aria-labelledby="nav-application-tab" tabindex="0">
-                            <p>{{ product.application.p1part1 }}<strong>{{ product.application.strong }}</strong>,
-                                {{ product.application.p1part2 }}</p>
-                            <p><strong>{{ product.application.course }}</strong> {{ product.application.p2part1 }}</p>
+                            aria-labelledby="nav-application-tab" tabindex="0" >
+                            <p v-html="product.applications.discription"></p>
+                            <p><strong>Курс прийому:</strong> {{ product.applications.course }}</p>
                         </div>
                     </div>
                 </div>
@@ -173,8 +160,9 @@ const addToBasket = () => {
 .product-item {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
+    width: 1306px !important;
 
 }
 
@@ -422,7 +410,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-@media (max-width: 1920px){
+@media (max-width: 1320px){
 .product {
     display: flex;
     flex-direction: column;

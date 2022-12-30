@@ -41,7 +41,7 @@
     margin-right: 26px;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1320px) {
         .delivery-information {
         font-weight: 400;
         font-size: 18px;

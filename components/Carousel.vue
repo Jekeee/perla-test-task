@@ -70,14 +70,14 @@
 .carousel-control-prev{
     left: 450px;
 }
-@media (min-width: 1921px) {
+@media (min-width: 1350px) {
     .carousel-control{
     position: relative !important;
 }
 }
 
 
-@media (max-width: 1920px) { 
+@media (max-width: 1320px) { 
     .btn-less-1920{
     display: block;
 }

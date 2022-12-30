@@ -133,7 +133,7 @@ defineProps(['basketList'])
 
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1320px) {
 
     .header-content {
         display: flex;
