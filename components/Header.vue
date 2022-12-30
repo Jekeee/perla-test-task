@@ -1,35 +1,35 @@
 <template>
     <div>
         <Free-delivery-block />
-    <div class="header container">
-        <div class="header-content container">
-            <div class="header-content-left">
-                <button><img src="../static/burger-desk-icon.png" alt="burger-desk-icon"></button>
-                <a href="/"><img src="../static/search-icon.png" alt="search-icon"></a>
-            </div>
-            <div class="header-content-logo">
-                <a href="/"><img src="../static/perla-helsa-logo.png" alt="perla-helsa-logo"></a>
-            </div>
-            <div class="header-content-right">
-                <a href="/"><img src="../static/phone-icon.png" alt="phone-icon"></a>
-                <div class="basket">
-                    <a href="/"><img src="../static/basket-icon.png" alt="basket-icon">
-                        <span class="cart-contity" v-if="basketList.length">{{ basketList.length }}</span></a>
+        <div class="header container">
+            <div class="header-content container">
+                <div class="header-content-left">
+                    <button><img src="../static/burger-desk-icon.png" alt="burger-desk-icon"></button>
+                    <a href="/"><img src="../static/search-icon.png" alt="search-icon"></a>
+                </div>
+                <div class="header-content-logo">
+                    <a href="/"><img src="../static/perla-helsa-logo.png" alt="perla-helsa-logo"></a>
+                </div>
+                <div class="header-content-right">
+                    <a href="/"><img src="../static/phone-icon.png" alt="phone-icon"></a>
+                    <div class="basket">
+                        <a href="/"><img src="../static/basket-icon.png" alt="basket-icon">
+                            <span class="cart-contity" v-if="basketList.length">{{ basketList.length }}</span></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header-menu container">
-            <ul>
-                <li><a href="/">Омега-3</a></li>
-                <li><a href="/">Вітаміни</a></li>
-                <li><a href="/">Добавки</a></li>
-                <li><a href="/">Доставка</a></li>
-                <li><a href="/">Про нас</a></li>
-            </ul>
+            <div class="header-menu container">
+                <ul>
+                    <li><a href="/">Омега-3</a></li>
+                    <li><a href="/">Вітаміни</a></li>
+                    <li><a href="/">Добавки</a></li>
+                    <li><a href="/">Доставка</a></li>
+                    <li><a href="/">Про нас</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    </div>
-    
+
 </template>
 
 <script setup>
@@ -38,8 +38,6 @@ defineProps(['basketList'])
 
 
 <style>
-
-
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -193,7 +191,7 @@ defineProps(['basketList'])
         justify-content: space-between;
         margin: 0;
         padding: 0;
-        width: 768px !important ;
+        width: 768px !important;
     }
 
     .header-menu li {
@@ -233,98 +231,95 @@ defineProps(['basketList'])
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 36px !important;
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 36px !important;
+    }
+
+    .header-content-left {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .header-content-right {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .header-content button {
+        margin-right: 51px;
+    }
+
+    .header-content a {
+        cursor: pointer;
+        margin-right: 51px;
+    }
+
+    .header-content a:last-child {
+        margin-right: 0;
+    }
+
+    .header-content img {
+        max-width: 11px;
+    }
+
+    .header-content-logo img {
+        max-width: 120px;
+    }
+
+    .header-menu {
+        display: none;
+
+    }
+
+    .header-menu ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        width: 384px !important;
+    }
+
+    .header-menu li {
+        margin-right: 55px;
+    }
+
+    .header-menu li:last-child {
+        margin-right: 0px;
+    }
+
+    .header-menu ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .basket {
+        position: relative;
+    }
+
+    .cart-contity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: #F5F352;
+        color: #1D1D1B;
+        width: 26px;
+        height: 26px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        top: -15px;
+        right: -17px;
+        padding: 0;
+        border-radius: 50%;
+
+    }
 }
-
-.header-content-left {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.header-content-right {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.header-content button {
-    margin-right: 51px;
-}
-
-.header-content a {
-    cursor: pointer;
-    margin-right: 51px;
-}
-
-.header-content a:last-child {
-    margin-right: 0;
-}
-
-.header-content img {
-    max-width: 11px;
-}
-
-.header-content-logo img {
-    max-width: 120px;
-}
-
-.header-menu {
-    display: none;
-   
-}
-
-.header-menu ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 384px !important ;
-}
-
-.header-menu li {
-    margin-right: 55px;
-}
-
-.header-menu li:last-child {
-    margin-right: 0px;
-}
-
-.header-menu ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-.basket {
-    position: relative;
-}
-
-.cart-contity {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background: #F5F352;
-    color: #1D1D1B;
-    width: 26px;
-    height: 26px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-    top: -15px;
-    right: -17px;
-    padding: 0;
-    border-radius: 50%;
-
-}
-}
-
-
-
 </style>

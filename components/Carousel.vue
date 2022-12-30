@@ -1,7 +1,7 @@
 <template>
     <div class="galery-product-slider">
         <div id="carouselExampleControls" class="carousel slide">
-             <div class="carousel-inner">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../static/product-img-1.png" class="d-block w-100" alt="product-img-1">
                 </div>
@@ -19,34 +19,39 @@
                 </div>
             </div>
             <div class="carousel-control btn-less-1920">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
                     <img src="../static/arrow-left-icon.png" alt="arrow-left-icon">
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
                     <img src="../static/arrow-right-icon.png" alt="arrow-right-icon">
                 </button>
             </div>
             <div class="carousel-control btn-more-1920">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
                     <img src="../static/desktop-arrow-left-icon.png" alt="desktop-arrow-left-icon">
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
                     <img src="../static/desktop-arrow-right-icon.png" alt="desktop-arrow-right-icon">
                 </button>
             </div>
-</div>
+        </div>
     </div>
 </template>
 
 <style>
-.btn-less-1920{
+.btn-less-1920 {
     display: none;
 }
-.galery-product-slider{
+
+.galery-product-slider {
     width: 550px !important;
 }
 
-.carousel-inner{
+.carousel-inner {
     position: relative;
     width: 100%;
     height: 450px !important;
@@ -61,103 +66,104 @@
 
 }
 
-
-
-.carousel-control-prev{
+.carousel-control-prev {
     right: 0 !important;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     left: 450px;
 }
+
 @media (min-width: 1350px) {
-    .carousel-control{
-    position: relative !important;
-}
+    .carousel-control {
+        position: relative !important;
+    }
 }
 
 
-@media (max-width: 1320px) { 
-    .btn-less-1920{
-    display: block;
-}
-    .btn-more-1920{
+@media (max-width: 1320px) {
+    .btn-less-1920 {
+        display: block;
+    }
+
+    .btn-more-1920 {
         display: none;
     }
 
-    .galery-product-slider{
-    width: 768px !important;
-    height: 310px;
-    display: flex;
-    justify-content: center;
+    .galery-product-slider {
+        width: 768px !important;
+        height: 310px;
+        display: flex;
+        justify-content: center;
 
+    }
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-width: 400px !important;
+        overflow: hidden;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        max-width: 22px !important;
+        opacity: 50% !important;
+        margin-left: -170px;
+        margin-right: -170px;
+
+    }
+
+
+
+    .carousel-control-prev {
+        right: 123px !important;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
 }
 
-.carousel-inner{
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 400px !important;
-    overflow: hidden;
-}
+@media (max-width: 768px) {
+    .btn-less-1920 {
+        display: block;
+    }
 
-.carousel-control-prev,
-.carousel-control-next {
-    max-width: 22px !important;
-    opacity: 50% !important;
-    margin-left: -170px;
-    margin-right: -170px;
-
-}
-
-
-
-.carousel-control-prev{
-    right: 123px !important;
-}
-
-.carousel-control-prev{
-    left: 0;
-}
-}
-
-@media (max-width: 768px) { 
-    .btn-less-1920{
-    display: block;
-}
-    .btn-more-1920{
+    .btn-more-1920 {
         display: none;
     }
-    .galery-product-slider{
-    max-width: 384px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+    .galery-product-slider {
+        max-width: 384px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        height: auto !important;
+        max-width: 285px !important;
+        overflow: hidden;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        max-width: 17px !important;
+        opacity: 50% !important;
+        margin-left: -45px;
+        margin-right: -45px;
+        height: 30px;
+        margin-top: 30%;
+
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
 }
-
-.carousel-inner{
-    position: relative;
-    width: 100%;
-    height: auto !important;
-    max-width: 285px !important;
-    overflow: hidden;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    max-width: 17px !important;
-    opacity: 50% !important;
-    margin-left: -45px;
-    margin-right: -45px;
-    height: 30px;
-    margin-top: 30%;
-
-}
-
-.carousel-control-prev{
-    left: 0;
-}
-}
-
 </style>

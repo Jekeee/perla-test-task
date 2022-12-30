@@ -1,15 +1,15 @@
 <template>
     <div class="free-delivery">
-            <p>
-                <img src="../static/free-delivery-icon.png" alt="free-delivery-icon">
-                Безкоштовна досавка від 1800 грн
-                <img src="../static/free-delivery-icon.png" alt="free-delivery-icon">
-            </p>
-        </div>
+        <p>
+            <img src="../static/free-delivery-icon.png" alt="free-delivery-icon">
+            Безкоштовна досавка від 1800 грн
+            <img src="../static/free-delivery-icon.png" alt="free-delivery-icon">
+        </p>
+    </div>
 </template>
 
 <style>
-    .free-delivery {
+.free-delivery {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,14 +37,14 @@
 }
 
 @media (max-width: 1350px) {
-    
+
     .free-delivery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #99AFFF;
-    padding: 5px 0;
-    color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #99AFFF;
+        padding: 5px 0;
+        color: #fff;
     }
 
     .free-delivery p {
@@ -66,14 +66,14 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .free-delivery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #99AFFF;
-    padding: 3px 0;
-    color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #99AFFF;
+        padding: 3px 0;
+        color: #fff;
     }
 
     .free-delivery p {

@@ -57,27 +57,25 @@ button {
 .main {
   background: url(../static/background.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   font-family: 'Onest', Arial, Helvetica, sans-serif;
   color: #1D1D1B;
 }
 
 
-@media (max-width: 1320px){
+@media (max-width: 1320px) {
   .container {
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 0 5px;
-}
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .container {
-  max-width: 384px;
-  margin: 0 auto;
-  padding: 0 5px;
+    max-width: 384px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
 }
-}
-
-
 </style>
