@@ -91,7 +91,8 @@
                                 @change="changeQuanity">
                             <div class="product-actions-quantity-plus" @click="quanityInc">+</div>
                         </div>
-                        <button class="show-basket" @click='addToBasket'>До кошика</button>
+                        <button class="show-basket all" @click='addToBasket'>До кошика</button>
+                        <button class="show-basket mobile" @click='addToBasket'>До кошика - 489 ₴</button>
                     </div>
                 </div>
             </div>
@@ -146,6 +147,9 @@ const addToBasket = () => {
 </script>
 
 <style>
+.show-basket.mobile{
+    display: none;
+}
 .product-tab {
     display: none;
     font-weight: 400;
@@ -687,6 +691,13 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 768px){
+.show-basket.mobile{
+    display: block;
+}
+
+.show-basket.all{
+    display: none;
+}
 .product {
     display: flex;
     flex-direction: column;

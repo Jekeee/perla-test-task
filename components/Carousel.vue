@@ -18,20 +18,30 @@
                     <img src="../static/product-img-5.png" class="d-block w-100" alt="product-img-5">
                 </div>
             </div>
-            <div class="carousel-control">
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <img src="../static/arrow-left-icon.png" alt="arrow-left-icon">
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <img src="../static/arrow-right-icon.png" alt="arrow-right-icon">
-            </button>
+            <div class="carousel-control btn-less-1920">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../static/arrow-left-icon.png" alt="arrow-left-icon">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../static/arrow-right-icon.png" alt="arrow-right-icon">
+                </button>
+            </div>
+            <div class="carousel-control btn-more-1920">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../static/desktop-arrow-left-icon.png" alt="desktop-arrow-left-icon">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../static/desktop-arrow-right-icon.png" alt="desktop-arrow-right-icon">
+                </button>
             </div>
 </div>
     </div>
 </template>
 
 <style>
-
+.btn-less-1920{
+    display: none;
+}
 .galery-product-slider{
     width: 550px !important;
 }
@@ -68,6 +78,13 @@
 
 
 @media (max-width: 1920px) { 
+    .btn-less-1920{
+    display: block;
+}
+    .btn-more-1920{
+        display: none;
+    }
+
     .galery-product-slider{
     width: 768px !important;
     height: 310px;
@@ -105,6 +122,12 @@
 }
 
 @media (max-width: 768px) { 
+    .btn-less-1920{
+    display: block;
+}
+    .btn-more-1920{
+        display: none;
+    }
     .galery-product-slider{
     max-width: 384px !important;
     display: flex;
