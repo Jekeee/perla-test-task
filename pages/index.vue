@@ -71,5 +71,13 @@ button {
 }
 }
 
+@media (max-width: 768px){
+  .container {
+  max-width: 384px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+}
+
 
 </style>

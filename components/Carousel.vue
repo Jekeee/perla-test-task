@@ -104,4 +104,37 @@
 }
 }
 
+@media (max-width: 768px) { 
+    .galery-product-slider{
+    max-width: 384px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    max-width: 285px !important;
+    overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    max-width: 17px !important;
+    opacity: 50% !important;
+    margin-left: -45px;
+    margin-right: -45px;
+    height: 30px;
+    margin-top: 30%;
+
+}
+
+.carousel-control-prev{
+    left: 0;
+}
+}
+
 </style>

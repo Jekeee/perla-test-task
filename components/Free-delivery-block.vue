@@ -65,4 +65,33 @@
 
     }
 }
+
+@media (max-width: 768px){
+    .free-delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #99AFFF;
+    padding: 3px 0;
+    color: #fff;
+    }
+
+    .free-delivery p {
+        display: flex;
+        align-items: center;
+        font-family: 'Onest';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    .free-delivery img {
+        max-width: 14px;
+        margin-left: 12px;
+        margin-right: 12px;
+
+    }
+}
 </style>
